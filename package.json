@@ -1,21 +1,27 @@
 {
-  "name": "react-native-responsive",
+  "name": "react-native-lightweight-responsive",
   "version": "0.0.1",
   "description": "Support responsive UI for react-native",
   "main": "src/Responsive.js",
   "scripts": {
     "test": "jest"
   },
+  "keywords": [
+    "react-native-lightweight-responsive",
+    "react-native",
+    "react",
+    "responsive"
+  ],
+  "author": "7772",
+  "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/7772/react-native-responsive.git"
+    "url": "git+https://github.com/7772/react-native-lightweight-responsive.git"
   },
   "peerDependencies": {
     "react": "*",
     "react-native": "*"
   },
-  "author": "7772",
-  "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
