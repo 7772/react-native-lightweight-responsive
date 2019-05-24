@@ -1,6 +1,6 @@
 import { Dimensions, PixelRatio } from 'react-native';
 import Exception from '../exception';
-import { RESPONSIVE_TYPE } from './type';
+import { RESPONSIVE_TYPE } from '../type';
 
 const appScreen = {width, height} = Dimensions.get('window');
 
