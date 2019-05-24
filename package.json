@@ -1,0 +1,15 @@
+{
+  "name": "react-native-responsive",
+  "version": "1.0.0",
+  "description": "Support responsive UI for react-native",
+  "main": "Responsive.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "author": "7772",
+  "license": "ISC"
+}
