@@ -22,10 +22,10 @@ const setOptions = (options) => {
       "`height` property in `options` object is not number."
     );
   }
-  if (typeof options.onlySmallerThanDefaultSize !== 'boolean') {
+  if (typeof options.enableOnlySmallSize !== 'boolean') {
     throw new Exception(
       "Responsive.setOptions() ERROR", 
-      "`onlySmallerThanDefaultSize` property in `options` object is not boolean."
+      "`enableOnlySmallSize` property in `options` object is not boolean."
     );
   }
 
@@ -35,7 +35,7 @@ const setOptions = (options) => {
 
   this.defaultSize.width = options.width;
   this.defaultSize.height = options.height;
-  this.onlySmallerThanDefaultSize = options.onlySmallerThanDefaultSize;
+  this.enableOnlySmallSize = options.enableOnlySmallSize;
 };
 
 const width = (width) => {
@@ -46,7 +46,7 @@ const width = (width) => {
   const ratio = (width / this.defaultSize.width) * 100;
   const responsiveWidth = getResponsiveValue(RESPONSIVE_TYPE['WIDTH'], ratio);
 
-  if (this.onlySmallerThanDefaultSize && responsiveWidth > width) {
+  if (this.enableOnlySmallSize && responsiveWidth > width) {
     return width;
   }
 
@@ -61,7 +61,7 @@ const height = (height) => {
   const ratio = (height / this.defaultSize.height) * 100;
   const responsiveHeight = getResponsiveValue(RESPONSIVE_TYPE['HEIGHT'], ratio);
 
-  if (this.onlySmallerThanDefaultSize && responsiveHeight > height) {
+  if (this.enableOnlySmallSize && responsiveHeight > height) {
     return height;
   }
 
@@ -70,7 +70,7 @@ const height = (height) => {
 
 export default Responsive = {
   defaultSize: getDefaultSize(),
-  onlySmallerThanDefaultSize: false,
+  enableOnlySmallSize: false,
   setOptions: setOptions,
   width: width,
   height: height,
