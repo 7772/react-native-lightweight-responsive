@@ -2,9 +2,13 @@
   "name": "react-native-responsive",
   "version": "1.0.0",
   "description": "Support responsive UI for react-native",
-  "main": "Responsive.js",
+  "main": "src/Responsive.js",
   "scripts": {
     "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/7772/react-native-responsive.git"
   },
   "peerDependencies": {
     "react": "*",

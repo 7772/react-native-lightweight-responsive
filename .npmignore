@@ -11,3 +11,6 @@ npm-debug.log
 example/
 .eslintrc
 yarn.lock
+
+# tests
+__tests__
