@@ -1,6 +1,6 @@
 import Exception from './exception';
 import { RESPONSIVE_TYPE } from './type';
-import { getDefaultSize, appScreen, getResponsiveValue } from './util';
+import { getDefaultSize, getResponsiveValue } from './util';
 
 
 const setOptions = (options) => {

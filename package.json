@@ -4,12 +4,18 @@
   "description": "Support responsive UI for react-native",
   "main": "Responsive.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "peerDependencies": {
     "react": "*",
     "react-native": "*"
   },
   "author": "7772",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-jest": "^24.8.0",
+    "jest": "^24.8.0"
+  }
 }
