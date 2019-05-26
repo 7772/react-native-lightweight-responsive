@@ -14,3 +14,6 @@ yarn.lock
 
 # tests
 __tests__/
+
+# assets
+assets/
