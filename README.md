@@ -42,3 +42,5 @@ import Responsive from 'react-native-lightweight-responsive';
 | height        | func | `height` | The size (`height`) that will be changed, based on the default size (`height`) that you set using `setOptions`. |
 
 ## Example
+
+[Example](https://github.com/7772/react-native-lightweight-responsive/blob/master/example/YourComponent.js)
