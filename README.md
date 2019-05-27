@@ -14,7 +14,7 @@ If you have UI prototype design and the default size of prototype is 375 X 812, 
 **install**
 
 ```
-npm install --save react-native-lightweight-responsize
+npm install --save react-native-lightweight-responsive
 ```
 
 **usage**
