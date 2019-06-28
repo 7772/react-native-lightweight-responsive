@@ -6,7 +6,7 @@ If you have UI prototype design and the default size of prototype is 375 X 812, 
 
 <img width="500" src="./assets/for-readme-1.png"/>
 
-*What is right is not what you want.*
+*What's on the right is not what you want.*
 
 
 ## Simple Usage
