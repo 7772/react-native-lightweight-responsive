@@ -18,10 +18,12 @@ export const getResponsiveValue = (type, ratio = null) => {
     screenValue = appScreen.width;  
   } else if (type === RESPONSIVE_TYPE['HEIGHT']) {
     screenValue = appScreen.height;
+  } else if (type === RESPONSIVE_TYPE['FONT']) {
+    screenValue = appScreen.width;
   } else {
     throw new Exception(
       "Responsive Library ERROR",
-      "getResponsiveValue() supports only 'WIDTH', 'HEIGHT'."
+      "getResponsiveValue() supports only 'WIDTH', 'HEIGHT', 'FONT'."
     );
   }
 
