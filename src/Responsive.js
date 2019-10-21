@@ -68,10 +68,26 @@ const height = (height) => {
   return responsiveHeight;
 };
 
+const font = (font) => {
+  if (!this.defaultSize) {
+    this.defaultSize = getDefaultSize();
+  }
+
+  const ratio = ((font / this.defaultSize.width) * 100);
+  const responsiveFont = getResponsiveValue(RESPONSIVE_TYPE['FONT'], ratio);
+
+  if (this.enableOnlySmallSize && responsiveFont > font) {
+    return font;
+  }
+
+  return responsiveFont;
+};
+
 export default Responsive = {
   defaultSize: getDefaultSize(),
   enableOnlySmallSize: false,
   setOptions: setOptions,
   width: width,
   height: height,
+  font: font,
 };
