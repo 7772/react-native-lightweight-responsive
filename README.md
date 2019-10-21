@@ -25,7 +25,13 @@ import Responsive from 'react-native-lightweight-responsive';
 <View style={{
   width: Responsive.width(320),
   height: Responsive.height(400),
-}}/>
+}}>
+  <Text style={{
+    fontSize: Responsive.font(16),
+  }}>
+    Hello. 
+  </Text>
+</View>
 ```
 
 **and then?**
@@ -38,8 +44,9 @@ import Responsive from 'react-native-lightweight-responsive';
 | Name          | Type           | Param  | Description |
 | ------------- |:-------------:| -----:| -----:  |
 | setOptions    | func | `{width: 360, height: 640, enableOnlySmallSize: false}` | `width`, `height` sets the default size. `enableOnlySmallSize` will apply `Responsive`'s features to smaller than default size if `true`.  |
-| width         | func      | `width`  | The size (`width`) that will be changed, based on the default size (`width`) that you set using `setOptions`.  |
-| height        | func | `height` | The size (`height`) that will be changed, based on the default size (`height`) that you set using `setOptions`. |
+| width         | func | `width`: number  | The size (`width`) that will be changed, based on the default size (`width`) that you set using `setOptions`.  |
+| height        | func | `height`: number | The size (`height`) that will be changed, based on the default size (`height`) that you set using `setOptions`. |
+| font          | func | `font`: number | The size (`font`) that will be changed, based on the default size (`width`) that you set using `setOptions`. |
 
 ## Example
 
