@@ -1,6 +1,6 @@
 {
   "name": "react-native-lightweight-responsive",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Support responsive UI for react-native",
   "main": "src/Responsive.js",
   "scripts": {
